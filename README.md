@@ -16,7 +16,7 @@ A year ago i made my move to Atom and MAN im still shaking by how much love this
 I am still rather new to the modern development world, and considering the massive connection increases between 2011 and 2015,i dont think this will change soon. But over the years, learning and developing my own curiosity, the light of [Vim](http://www.vim.org/) crossed my eyes, actually it strived it, like the flash of a camera.
 
 Over time, honing my skills, glimpses of performace needs strifed through heart and fingers. And then Reddit occured with one special [Post](https://www.reddit.com/r/vim/comments/3lywog/this_is_what_my_macvim_workflow_looks_like_what/). I started to remember blogposts of people talking about vim. that it´s like the next levelUp of typing. First, there comes hitting the board like a two year old, impressed by the sound of a press, followed by writing with 10 fingers, next up looking into Girls eyes while impressingly writing her a whole Poem, just because you can.
-Then things settled down, thoughts of boringness while doing the usual ottonormal stuff comming up. But then, it´s like a dark forgotten force calls you to join the party, masterblade keeper, senseis, ninjas, yes... you discovered the hidden level welcomming you pleasurable. But there is one rule, "Do not... stop learning !"
+Then things settled down, thoughts of boringness while doing the usual ottonormal stuff comming up. But then, it´s like a dark forgotten force calls you to join the party, masterblade keeper, senseis, ninjas, yes... you discovered the hidden level welcomming you pleasurable. But there is one rule, **"Do not... stop learning !"**
 
 So im here now, and thank you for the invitation. :)
 
