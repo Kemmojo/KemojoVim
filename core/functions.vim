@@ -16,10 +16,10 @@ function! InitializeDirectories()
     " To specify a different directory in which to place the vimbackup,
     " vimviews, vimundo, and vimswap files/directories, add the following to
     " your .vimrc.before.local file:
-    "   let g:evervim_consolidated_directory = <full path to desired directory>
-    "   eg: let g:evervim_consolidated_directory = $HOME . '/.vim/'
-    if exists('g:evervim_consolidated_directory')
-        let common_dir = g:evervim_consolidated_directory . prefix
+    "   let g:kemojovim_consolidated_directory = <full path to desired directory>
+    "   eg: let g:kemojovim_consolidated_directory = $HOME . '/.vim/'
+    if exists('g:kemojovim_consolidated_directory')
+        let common_dir = g:kemojovim_consolidated_directory . prefix
     else
         let common_dir = parent . '/.' . prefix
     endif
@@ -43,33 +43,33 @@ endfunction
 call InitializeDirectories()
 " }
 
-" Initialize NERDTree as needed {
-function! NERDTreeInitAsNeeded()
-    redir => bufoutput
-    buffers!
-    redir END
-    let idx = stridx(bufoutput, "NERD_tree")
-    if idx > -1
-        NERDTreeMirror
-        NERDTreeFind
-        wincmd l
-    endif
-endfunction
-" }
+" " Initialize NERDTree as needed {
+" function! NERDTreeInitAsNeeded()
+"     redir => bufoutput
+"     buffers!
+"     redir END
+"     let idx = stridx(bufoutput, "NERD_tree")
+"     if idx > -1
+"         NERDTreeMirror
+"         NERDTreeFind
+"         wincmd l
+"     endif
+" endfunction
+" " }
 
-" Strip whitespace {
-function! StripTrailingWhitespace()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " do the business:
-    %s/\s\+$//e
-    " clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-" }
+" " Strip whitespace {
+" function! StripTrailingWhitespace()
+"     " Preparation: save last search, and cursor position.
+"     let _s=@/
+"     let l = line(".")
+"     let c = col(".")
+"     " do the business:
+"     %s/\s\+$//e
+"     " clean up: restore previous search history, and cursor position
+"     let @/=_s
+"     call cursor(l, c)
+" endfunction
+" " }
 
 " Unix Dos Conversion {
 function! Dos2Unix()
@@ -110,8 +110,8 @@ function! s:ExpandFilenameAndExecute(command, file)
     execute a:command . " " . expand(a:file, ":p")
 endfunction
 
-function! EditEverVimConfig()
-    call <SID>ExpandFilenameAndExecute("tabedit", "~/.EverVim.vimrc")
+function! EditKemojoVimConfig()
+    call <SID>ExpandFilenameAndExecute("tabedit", "~/.KemojoVim.vimrc")
 endfunction
 
 function! ReplaceInFile(file, regexmatch, replace)
@@ -122,53 +122,54 @@ function! DeleteLinesInFile(file, regexmatch)
     execute 'args ' . a:file . ' | argdo g/' . a:regexmatch . '/d | argdo wq'
 endfunction
 
-function! EverVimBundleDir(bundlename)
-    return $evervim_root . "/bundle/" . a:bundlename
+function! KemojoVimBundleDir(bundlename)
+    return $kemojovim_root . "/bundle/" . a:bundlename
 endfunction
 
-function! EverVimUpdateConfig()
+function! KemojoVimUpdateConfig()
     if WINDOWS()
-        execute '!git -C \%USERPROFILE\%/.EverVim pull'
+        execute '!git -C \%USERPROFILE\%/.KemojoVim pull'
     else
-        execute '!git -C ~/.EverVim pull'
+        execute '!git -C ~/.KemojoVim pull'
     endif
-    execute "source ~/.EverVim/vimrc"
+    execute "source ~/.KemojoVim/vimrc"
 endfunction
 
-function! EverVimUpdatePlugins()
+function! KemojoVimUpdatePlugins()
     execute 'PlugUpgrade'
     execute 'PlugClean!'
     execute 'PlugUpdate'
     echo 'Update Completed!'
 endfunction
 
-function! EverVimShowLog()
+function! KemojoVimShowLog()
     if exists(':Agit')
-        echo 'Showing git log for EverVim, press `q` to exit.'
+        echo 'Showing git log for KemojoVim, press `q` to exit.'
         sleep 500m
-        execute 'Agit --dir=~/.EverVim'
+        execute 'Agit --dir=~/.KemojoVim'
     endif
     " TODO: Log without AGit
 endfunction
 
-function! EverVimFullUpgrade()
+function! KemojoVimFullUpgrade()
     copen
-    cexpr "Running EverVim Full Upgrade ...\n".
+    cexpr "Running KemojoVim Full Upgrade ...\n".
                 \ "This will take about 2-5 minutes, depending on your network condition.\n" .
                 \ "After finish updating, you can try:\n".
                 \ "    - press `D` to see the changes for plugins.\n" .
-                \ "    - run `:call EverVimShowLog()` to view the git log for EverVim in Agit\n" .
+                \ "    - run `:call KemojoVimShowLog()` to view the git log for KemojoVim in Agit\n" .
                 \ "A restart is **required** after the updating process is finished.\n" . "Enjoy!"
     sleep 1000m
-    silent! call EverVimUpdateConfig()
-    silent! call EverVimUpdatePlugins()
+    silent! call KemojoVimUpdateConfig()
+    silent! call KemojoVimUpdatePlugins()
 endfunction
 
-function! EverVimInitPlugins()
-    if !isdirectory(expand('~/.EverVim/bundle'))
+function! KemojoVimInitPlugins()
+    if !isdirectory(expand('~/.KemojoVim/bundle'))
         execute 'PlugInstall'
     endif
 endfunction
+
 
 function! SourceConfigsIn(dir)
     let filelist = split(globpath(a:dir, '*.vim'), '\n')

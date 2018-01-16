@@ -1,5 +1,0 @@
-" EverVim HTML Bundles
-Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-haml'
-Plug 'mattn/emmet-vim'
-Plug 'digitaltoad/vim-pug'

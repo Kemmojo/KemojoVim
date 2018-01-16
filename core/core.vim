@@ -1,61 +1,61 @@
-" EverVim Core Config
+" KemojoVim Core Config
 
 " Identify platform {
-    source $evervim_root/core/platform.vim
+    source $kemojovim_root/core/platform.vim
 " }
 
 " Basics {
-    source $evervim_root/core/basics.vim
+    source $kemojovim_root/core/basics.vim
 " }
 
 " Windows Compatible {
-    source $evervim_root/core/windows.vim
+    source $kemojovim_root/core/windows.vim
 " }
 
-" Arrow Key Fix {
-    source $evervim_root/core/arrowkey-fix.vim
+" Arrow Kemojoy Fix {
+    source $kemojovim_root/core/arrowkey-fix.vim
 " }
 
 " Functions {
-    source $evervim_root/core/functions.vim
+    source $kemojovim_root/core/functions.vim
 " }
 
 " Use config if available {
-    if filereadable(expand("~/.EverVim.vimrc"))
-        source ~/.EverVim.vimrc
+    if filereadable(expand("~/.KemojoVim.vimrc"))
+        source ~/.KemojoVim.vimrc
     endif
 " }
 
 " Use bundles config {
-    if filereadable(expand($evervim_root . "/plugins/plugins.vim"))
-        source $evervim_root/plugins/plugins.vim
+    if filereadable(expand($kemojovim_root . "/plugins/plugins.vim"))
+        source $kemojovim_root/plugins/plugins.vim
     endif
 " }
 
 " General {
-    source $evervim_root/core/general.vim
+    source $kemojovim_root/core/general.vim
 " }
 
 " Vim UI {
-    source $evervim_root/core/vimui.vim
+    source $kemojovim_root/core/vimui.vim
 " }
 
 " Formatting {
-    source $evervim_root/core/formatting.vim
+    source $kemojovim_root/core/formatting.vim
 " }
 
 " Session {
-    source $evervim_root/core/session.vim
+    source $kemojovim_root/core/session.vim
 " }
 
-" Key (re)Mappings {
-    source $evervim_root/core/keymap.vim
+" Kemojoy (re)Mappings {
+    source $kemojovim_root/core/keymap.vim
 " }
 "
 " Plugin Configuration {
-    source $evervim_root/plugins/plugin-config.vim
+    source $kemojovim_root/plugins/plugin-config.vim
 " }
 "
 " GUI Config {
-    source $evervim_root/core/gui.vim
+    source $kemojovim_root/core/gui.vim
 " }
