@@ -19,15 +19,15 @@ So im here now, and thank you for the invitation. :)
 ## Prerequisites
 Installation on macOS requires these commands first:
 
-``zsh
+```zsh
 brew install python3 ctags cmake neovim
-``
+```
 
 ## Installation
-``zsh
+```zsh
 https://github.com/Kemmojo/KemojoVim.git
 curl -sLf https://github.com/Kemmojo/KemojoVim/master/Boot-KemojoVim.sh | bash
-``
+```
 
 
 ## Todo
