@@ -1,23 +1,15 @@
 " KemojoVim Core Config
 
-" Identify platform {
-    source $kemojovim_root/core/platform.vim
-" }
-
 " Basics {
-    source $kemojovim_root/core/basics.vim
-" }
-
-" Windows Compatible {
-    source $kemojovim_root/core/windows.vim
+"    source $kemojovim_root/core/basics.vim
 " }
 
 " Arrow Kemojoy Fix {
-    source $kemojovim_root/core/arrowkey-fix.vim
+"    source $kemojovim_root/core/arrowkey-fix.vim
 " }
 
 " Functions {
-    source $kemojovim_root/core/functions.vim
+"    source $kemojovim_root/core/functions.vim
 " }
 
 " Use config if available {
@@ -27,35 +19,31 @@
 " }
 
 " Use bundles config {
-    if filereadable(expand($kemojovim_root . "/plugins/plugins.vim"))
-        source $kemojovim_root/plugins/plugins.vim
-    endif
+"    if filereadable(expand($kemojovim_root . "/plugins/plugins.vim"))
+"        source $kemojovim_root/plugins/plugins.vim
+"    endif
 " }
 
 " General {
-    source $kemojovim_root/core/general.vim
+"    source $kemojovim_root/core/general.vim
 " }
 
 " Vim UI {
-    source $kemojovim_root/core/vimui.vim
+"    source $kemojovim_root/core/vimui.vim
 " }
 
 " Formatting {
-    source $kemojovim_root/core/formatting.vim
+"    source $kemojovim_root/core/formatting.vim
 " }
 
 " Session {
-    source $kemojovim_root/core/session.vim
+"    source $kemojovim_root/core/session.vim
 " }
 
 " Kemojoy (re)Mappings {
-    source $kemojovim_root/core/keymap.vim
+"    source $kemojovim_root/core/keymap.vim
 " }
 "
 " Plugin Configuration {
-    source $kemojovim_root/plugins/plugin-config.vim
-" }
-"
-" GUI Config {
-    source $kemojovim_root/core/gui.vim
+"    source $kemojovim_root/plugins/plugin-config.vim
 " }

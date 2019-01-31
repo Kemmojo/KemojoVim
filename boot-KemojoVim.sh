@@ -27,9 +27,9 @@ if [ ! -f ".KemojoVim.vimrc" ]; then
     cp ~/.KemojoVim/.KemojoVim.vimrc ~/.KemojoVim.vimrc
 fi
 
-echo 'Downloading Vim-Plug'
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# echo 'Downloading Vim-Plug'
+# curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 echo 'All done with this script, now run vim/neovim and execute ":PlugInstall"'
