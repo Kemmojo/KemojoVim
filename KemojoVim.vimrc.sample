@@ -6,6 +6,10 @@
 
 
 " KemojoVim options {
-
+"    st (suckless Terminal) Settings
+"    let g:netrw_dirhistmax  =10
+"    let g:netrw_dirhist_cnt =1
+"    let g:netrw_dirhist_1='/home/kemojo/dotfiles/strc/st-0.8.1'
+    let g:kemojovim_bundle_groups=['general']
 
 " }

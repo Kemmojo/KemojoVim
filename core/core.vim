@@ -9,7 +9,7 @@
 " }
 
 " Functions {
-"    source $kemojovim_root/core/functions.vim
+    source $kemojovim_root/core/functions.vim
 " }
 
 " Use config if available {
@@ -19,21 +19,21 @@
 " }
 
 " Use bundles config {
-"    if filereadable(expand($kemojovim_root . "/plugins/plugins.vim"))
-"        source $kemojovim_root/plugins/plugins.vim
-"    endif
+    if filereadable(expand($kemojovim_root . "/plugins/plugins.vim"))
+        source $kemojovim_root/plugins/plugins.vim
+    endif
 " }
 
 " General {
-"    source $kemojovim_root/core/general.vim
+    source $kemojovim_root/core/general.vim
 " }
 
 " Vim UI {
-"    source $kemojovim_root/core/vimui.vim
+    source $kemojovim_root/core/vimui.vim
 " }
 
 " Formatting {
-"    source $kemojovim_root/core/formatting.vim
+    source $kemojovim_root/core/formatting.vim
 " }
 
 " Session {

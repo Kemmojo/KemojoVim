@@ -24,12 +24,12 @@ ln -sfnv ~/.KemojoVim/vimrc ~/.KemojoVim/init.vim
 
 if [ ! -f ".KemojoVim.vimrc" ]; then
     echo "Copied KemojoVim configuration sample to ~/.KemojoVim.vimrc"
-    cp ~/.KemojoVim/.KemojoVim.vimrc ~/.KemojoVim.vimrc
+    cp ~/.KemojoVim/KemojoVim.vimrc.sample ~/.KemojoVim.vimrc
 fi
 
 # echo 'Downloading Vim-Plug'
-# curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.KemojoVim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 echo 'All done with this script, now run vim/neovim and execute ":PlugInstall"'
