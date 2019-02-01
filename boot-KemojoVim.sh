@@ -27,7 +27,7 @@ if [ ! -f ".KemojoVim.vimrc" ]; then
     cp ~/.KemojoVim/KemojoVim.vimrc.sample ~/.KemojoVim.vimrc
 fi
 
-# echo 'Downloading Vim-Plug'
+echo 'Downloading Vim-Plug'
 curl -fLo ~/.KemojoVim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
