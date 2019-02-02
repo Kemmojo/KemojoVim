@@ -14,3 +14,5 @@
 - :only            - keep only this window open
 - :ls              - show current buffers
 - :b 2             - open buffer #2 in this window
+- sp               - short for 'split'
+- vsp              - short for 'vertical split'

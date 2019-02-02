@@ -45,5 +45,5 @@
 " }
 "
 " Plugin Configuration {
-"    source $kemojovim_root/plugins/plugin-config.vim
+    source $kemojovim_root/plugins/plugin-config.vim
 " }

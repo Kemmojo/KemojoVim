@@ -1,1 +1,2 @@
-Plug 'dracula/vim' " Test theme for KemojoVim
+Plug 'dracula/vim'
+Plug 'tpope/vim-sensible'
