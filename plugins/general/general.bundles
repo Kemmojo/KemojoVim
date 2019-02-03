@@ -1,2 +1,9 @@
-Plug 'dracula/vim'
-Plug 'tpope/vim-sensible'
+" {{{ Themes
+    " Using my own, located in the 'colors' directory
+" }}}
+
+" {{{ Hex Color Highlighter
+    Plug 'ap/vim-css-color'
+" }}}
+
+

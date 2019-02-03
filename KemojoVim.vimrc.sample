@@ -10,6 +10,11 @@
 "    let g:netrw_dirhistmax  =10
 "    let g:netrw_dirhist_cnt =1
 "    let g:netrw_dirhist_1='/home/kemojo/dotfiles/strc/st-0.8.1'
-    let g:kemojovim_bundle_groups=['general']
+    
+"   Bundle Groups to source
+    let g:kemojovim_bundle_groups=['general', 'ruby']
+
+"   Vim Color Theme
+    let g:kemojovim_color_theme = "OceanDrake"
 
 " }
