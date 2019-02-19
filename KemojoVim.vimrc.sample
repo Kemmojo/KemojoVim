@@ -12,9 +12,12 @@
 "    let g:netrw_dirhist_1='/home/kemojo/dotfiles/strc/st-0.8.1'
     
 "   Bundle Groups to source
-    let g:kemojovim_bundle_groups=['general', 'ruby']
+    let g:kemojovim_bundle_groups=['general', 'appearance', 'ruby', 'youcompleteme', 'programming', 'html', 'python', 'markdown']
 
 "   Vim Color Theme
     let g:kemojovim_color_theme = "OceanDrake"
+
+"   Vim Python Support
+    let g:python3_host_prog = '/usr/bin/python3'
 
 " }

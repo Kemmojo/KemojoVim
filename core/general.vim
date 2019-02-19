@@ -8,3 +8,5 @@ set background=dark         " Assume a dark background
 filetype plugin indent on   " Automatically detect file types.
 syntax on
 set encoding=utf-8
+
+set clipboard+=unnamedplus

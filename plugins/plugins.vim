@@ -7,7 +7,7 @@
 
 " Bundles {
     if !exists('g:kemojovim_bundle_groups')
-        let g:kemojovim_bundle_group=['general']        
+        let g:kemojovim_bundle_group=[['general', 'ruby', 'youcompleteme']        
     endif
 
     for $bundle_group in g:kemojovim_bundle_groups

@@ -39,7 +39,7 @@
   let s:base0B=['#99c794', '114']   " #99c794:114 #5faf00:70 #87d75f:113
   let s:base0C=['#007fa4', '31']    " #62b3b2:73  #007fa4:31
   let s:base0D=['#6699cc', '68']    " #6699cc
-  let s:base0E=['af87ff', '141']    " #c594c5:176 #007fa4:31 #b36fc9:134 #9183e4:105 #af87d7:140
+  let s:base0E=['#af87ff', '141']   " #c594c5:176 #007fa4:31 #b36fc9:134 #9183e4:105 #af87d7:140 #af87ff:141
 
   let s:base0F=['#ab7967', '137']   " #ab7967
   let s:base10=['#ffffff', '15']    " #ffffff
@@ -191,7 +191,7 @@ call <sid>hi('htmlItalic',                 s:base0E, '',       '',          '')
 call <sid>hi('htmlTag',                    s:base0C, '',       '',          '')
 call <sid>hi('htmlEndTag',                 s:base0C, '',       '',          '')
 call <sid>hi('htmlArg',                    s:base0A, '',       '',          '')
-call <sid>hi('htmlTagName',                s:base07, '',       '',          '')
+call <sid>hi('htmlTagName',                s:base0C, '',       '',          '')
 
 call <sid>hi('javaScript',                 s:base05, '',       '',          '')
 call <sid>hi('javaScriptNumber',           s:base09, '',       '',          '')

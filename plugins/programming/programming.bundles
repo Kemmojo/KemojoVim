@@ -1,0 +1,5 @@
+Plug 'terryma/vim-multiple-cursors'
+Plug 'vim-syntastic/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
+Plug 'majutsushi/tagbar'

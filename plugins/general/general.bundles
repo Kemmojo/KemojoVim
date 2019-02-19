@@ -6,4 +6,9 @@
     Plug 'ap/vim-css-color'
 " }}}
 
-
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'

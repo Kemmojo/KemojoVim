@@ -1,10 +1,10 @@
 " KemojoVim Core Config
 
 " Basics {
-"    source $kemojovim_root/core/basics.vim
+    source $kemojovim_root/core/basics.vim
 " }
 
-" Arrow Kemojoy Fix {
+" Arrow Kemojo Fix {
 "    source $kemojovim_root/core/arrowkey-fix.vim
 " }
 
@@ -41,7 +41,7 @@
 " }
 
 " Kemojoy (re)Mappings {
-"    source $kemojovim_root/core/keymap.vim
+    source $kemojovim_root/core/keymap.vim
 " }
 "
 " Plugin Configuration {
